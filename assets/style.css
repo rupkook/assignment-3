@@ -10,9 +10,21 @@ header .header-wrap{
 .banner-section .add-style{
 	margin: -116px 0px 0 146px;
 }
+
+/* meet the team section */
 .image-holder{
 	background-image: url(./media/team.png);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.team-section .image-holder a{
+	padding: 2px 9px;
+}
+.team-section .image-holder .add-style{
+	padding: 2px 6px;
+}
+.team-section .image-holder .add-style-2{
+	padding: 2px 8px;
 }
