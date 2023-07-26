@@ -5,12 +5,12 @@
 <!-- Meta Data -->
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Tea House</title>
+<title>Fruit Burst</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="">
+<link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.svg">
 
 <!-- font awesome -->
 <script src="https://kit.fontawesome.com/7c63329482.js" crossorigin="anonymous"></script>
@@ -18,125 +18,167 @@
 <!-- Manrope google font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@400;500;600;700;800&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
 <!-- tailwind and daisy UI -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- tailwind custom colors -->
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '',
-          }
-        }
-      }
-    }
-  </script>
+<!-- css style -->
+<link rel="stylesheet" href="assets/style.css">
 
 <style>
 	.font-family{
-		font-family: 'Manrope', sans-serif;
+		font-family: 'Lato', sans-serif;
 	}
+	.custom-container{
+      max-width: 1440px; 
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
 </style>
 </head>
 
-<body class="font-family">
-<header>
-<!-- banner-section -->
-	<section class="container mx-auto">
-		<div class="hero">
-			<div class="hero-content flex-col gap-16 lg:flex-row">
-				<div>
-					<h1 class="text-7xl font-bold">It's good <br> 
-						tea time at The <br> Tea House</h1>
-					<p class="py-6">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
-					<button class=" p-4 rounded-lg text-white bg-gradient-to-r from-orange-500 to-red-600 ">Explore More</button>
-				</div>
-				<div>
-					<img src="assets/media/banner.png" class="max-w-sm"/>
-					<!-- ratings badge -->
-					<div class=" -mt-16 flex items-center gap-4 bg-white p-5 w-60 drop-shadow-lg">
-						<i class="fa-solid fa-star text-3xl text-amber-400"></i>
-						<div>
-							<h3 class="text-3xl text-[#1C1C1C]">5.00</h3>
-							<p class=" text-[#1C1C1C]">Trust Pilot Ratings</p>
-						</div>
+<body class="font-family ">
+<!-- header section -->
+	<header class="custom-container mt-12 mb-14">
+		<div class="header-wrap bg-[#F85559] rounded-full flex items-center justify-between
+		">
+			<div>
+				<nav>
+					<ul class="flex gap-8 text-[#FFFFFF]">
+						<li><a class="text-lg font-medium" href="#">Home</a></li>
+						<li><a class="text-lg font-medium" href="#">About Us</a></li>
+						<li><a class="text-lg font-medium" href="#">Shop</a></li>
+						<li><a class="text-lg font-medium" href="#">All Fruits</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="">
+				<a href="#"><img src="assets/media/logo.png" alt=""></a>
+			</div>
+			<div class="bg-white rounded-full py-2 px-4 ">
+				<input  type="search" placeholder="search here" name="search here">
+				<i class=" text-[#121212] fa-solid fa-magnifying-glass"></i>
+			</div>
+		</div>
+	</header>
+	<!-- main section -->
+	<main class="custom-container">
+	<!-- banner section -->
+	<section class="banner-section mb-36">
+		<div class="carousel w-full relative">
+			<!-- slider-1 -->
+			<div id="slide1" class="carousel-item relative w-full">
+			<div class="relative">
+				<img src="assets/media/banner4.png" class="w-full"/>
+				<div class="absolute inset-0 bg-[#000000] bg-opacity-50 rounded-lg"></div>
+				<div class="absolute top-20 text-center left-96">
+					<h2 class="text-[#FFFFFF] mb-6 font-extrabold text-7xl">Exotic tastes at your <br> doorstep</h2>
+					<p class="text-[#FFFFFF] mb-8 font-medium text-xl">We supply highly quality organic products</p>
+					<div>
+						<a class="px-8 py-4 bg-[#F85559] text-[#FFFFFF] text-xl font-extrabold rounded-lg" href="#">Shop Now</a>
 					</div>
 				</div>
 			</div>
+			<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+				<a href="#slide4" class="btn btn-circle">❮</a> 
+				<a href="#slide2" class="btn btn-circle">❯</a>
+			</div>
+			</div> 
+			<!-- slide-2 -->
+			<div id="slide2" class="carousel-item relative w-full">
+				<div class="relative">
+				<img src="assets/media/banner3.png" class="w-full"/>
+				<div class="absolute inset-0 bg-[#000000] bg-opacity-50"></div>
+				<div class="absolute top-20 text-center left-96">
+					<h2 class="text-[#FFFFFF] mb-6 font-extrabold text-7xl">Exotic tastes at your <br> doorstep</h2>
+					<p class="text-[#FFFFFF] mb-8 font-medium text-xl">We supply highly quality organic products</p>
+					<div>
+						<a class="px-8 py-4 bg-[#F85559] text-[#FFFFFF] text-xl font-extrabold rounded-lg" href="#">Shop Now</a>
+					</div>
+				</div>
+				</div>
+				<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+				<a href="#slide1" class="btn btn-circle">❮</a> 
+				<a href="#slide3" class="btn btn-circle">❯</a>
+				</div>
+			</div> 
+			<!-- slide-3 -->
+			<div id="slide3" class="carousel-item relative w-full">
+				<div class="relative">
+				<img src="assets/media/banner2.png" class="w-full"/>
+				<div class="absolute inset-0 bg-[#000000] bg-opacity-50"></div>
+					<div class="absolute top-20 text-center left-96">
+						<h2 class="text-[#FFFFFF] mb-6 font-extrabold text-7xl">Exotic tastes at your <br> doorstep</h2>
+						<p class="text-[#FFFFFF] mb-8 font-medium text-xl">We supply highly quality organic products</p>
+						<div>
+							<a class="px-8 py-4 bg-[#F85559] text-[#FFFFFF] text-xl font-extrabold rounded-lg" href="#">Shop Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+				<a href="#slide2" class="btn btn-circle">❮</a> 
+				<a href="#slide4" class="btn btn-circle">❯</a>
+				</div>
+			</div> 
+			<!-- slide-4 -->
+			<div id="slide4" class="carousel-item relative w-full">
+				<div class="relative">
+				<img src="assets/media/banner1.png" class="w-full h-"/>
+				<div class="absolute inset-0 bg-[#000000] bg-opacity-50"></div>
+				<div class="absolute top-20 text-center left-96">
+					<h2 class="text-[#FFFFFF] mb-6 font-extrabold text-7xl">Exotic tastes at your <br> doorstep</h2>
+					<p class="text-[#FFFFFF] mb-8 font-medium text-xl">We supply highly quality organic products</p>
+					<div>
+						<a class="px-8 py-4 bg-[#F85559] text-[#FFFFFF] text-xl font-extrabold rounded-lg" href="#">Shop Now</a>
+					</div>
+				</div>
+				</div>
+				<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+				<a href="#slide3" class="btn btn-circle">❮</a> 
+				<a href="#slide1" class="btn btn-circle">❯</a>
+				</div>
+			</div>
+		</div>
+		<div class="w-4/5 bg-[#FFFFFF] flex gap-16 items-center py-8 px-16 rounded-lg add-style drop-shadow-xl">
+			<div class="text-center">
+				<img class="mb-4" src="assets/media/fruit1.png" alt="">
+				<h4 class="text-[#212121] font-medium text-xl">Strawberry</h4>
+			</div>
+			<div class="text-center">
+				<img class="mb-4" src="assets/media/fruit2.png" alt="">
+				<h4 class="text-[#212121] font-medium text-xl">Strawberry</h4>
+			</div>
+			<div class="text-center">
+				<img class="mb-4" src="assets/media/fruit3.png" alt="">
+				<h4 class="text-[#212121] font-medium text-xl">Strawberry</h4>
+			</div>
+			<div class="text-center">
+				<img class="mb-4" src="assets/media/fruit4.png" alt="">
+				<h4 class="text-[#212121] font-medium text-xl">Strawberry</h4>
+			</div>
+			<div class="text-center">
+				<img class="mb-4" src="assets/media/fruit5.png" alt="">
+				<h4 class="text-[#212121] font-medium text-xl">Strawberry</h4>
+			</div>
+			<div class="text-center">
+				<img class="mb-4" src="assets/media/fruit6.png" alt="">
+				<h4 class="text-[#212121] font-medium text-xl">Strawberry</h4>
+			</div>
 		</div>
 	</section>
-</header>
-<main class="container mx-auto ">
-<!-- feature section -->
-	<section class="text-center my-24">
-		<h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
-		<p class="lg:max-w-4xl mx-auto mb-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-		<!-- feature tea card container -->
-		<div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-			<!-- first card -->
-			<div class="card p-10 shadow-xl bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
-			<figure><img src="assets/media/tea-1.png" alt="Shoes" /></figure>
-				<div class="card-body text-center">
-					<h2 class="text-2xl mb-3 font-extrabold text-[#1C1C1C]">Milk Tea</h2>
-					<p class="text-[#1C1C1C]">Creamer could be replaced by fresh milk</p>
-				</div>
-			</div>
-			<!-- second card -->
-			<div class="card p-10 shadow-xl bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
-				<figure><img src="assets/media/tea-2.png" alt="Shoes" /></figure>
-				<div class="card-body text-center">
-					<h2 class="text-2xl mb-3 font-extrabold text-[#1C1C1C]">Milk Tea</h2>
-					<p class="text-[#1C1C1C]">Creamer could be replaced by fresh milk</p>
-				</div>
-			</div>
-			<!-- third card -->
-			<div class="card p-10 shadow-xl bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
-				<figure><img src="assets/media/tea-3.png" alt="Shoes" /></figure>
-				<div class="card-body text-center">
-					<h2 class="text-2xl mb-3 font-extrabold text-[#1C1C1C]">Milk Tea</h2>
-					<p class="text-[#1C1C1C]">Creamer could be replaced by fresh milk</p>
-				</div>
-			</div>
-			<!-- fourth card -->
-			<div class="card p-10 shadow-xl bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
-				<figure><img src="assets/media/tea-4.png" alt="Shoes" /></figure>
-				<div class="card-body text-center">
-					<h2 class="text-2xl mb-3 font-extrabold text-[#1C1C1C]">Milk Tea</h2>
-					<p class="text-[#1C1C1C]">Creamer could be replaced by fresh milk</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- great tea fresh tea section -->
-	<section class="my-24 flex flex-col lg:flex-row gap-14 items-center">
-		<div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 flex-1">
-			<div class="rounded-xl bg-gradient-to-r from-red-100 to-orange-50 h-36"></div>
-			<div class="row-span-2 bg-[#E6A6231A] rounded-xl h-96 flex justify-center items-center">
-				<img src="assets/media/fresh-1.png" alt="">
-			</div>
-			<div class="row-span-2 rounded-xl bg-[#5776391A] h-96 flex justify-center items-center">
-				<img src="assets/media/fresh-2.png" alt="">
-			</div>
-			<div class="rounded-xl bg-gradient-to-r from-[#D9D9D9] to-[#ffffff] h-36"></div>
-		</div>
-		<div class="space-y-5 flex-1">
-			<h3 class="text-5xl mb-5 font-extrabold text-[#1C1C1C]">Great Tea, Freshly <br> Presented</h3>
-			<p class="mb-8">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
-			<h4 class=" font-extrabold mb-4 text-xl">Unique Taste</h4>
-			<p class="mb-5">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
-			<h4 class="font-extrabold text-xl mb-4">Premium Quality</h4>
-			<p class="">Premium Quality that makes tea more elegant and more durable when you use it.</p>
-		</div>
-	</section>
-</main>
-<footer>
-	
-</footer>
-</body>
+	<!-- deal of the day section -->
+	<section>
 
+	</section>
+	</main>
+	<!-- footer section -->
+	<footer class="custom-container">
+		
+	</footer>
+</body>
 </html>
