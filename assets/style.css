@@ -28,3 +28,9 @@ header .header-wrap{
 .team-section .image-holder .add-style-2{
 	padding: 2px 8px;
 }
+
+/* Deal of the day styles */
+
+.deal-section .cards .deal-card{
+ width: 342px;
+}
